@@ -1,0 +1,25 @@
+/** formulario **/
+
+@media (min-width: 768px) {
+    #nombre {
+        transition: all 2s;
+    }
+    #nombre:focus {
+        width: 755px;
+        font-size: 20px;
+    }
+    #email {
+        transition: all 2s;
+    }
+    #email:focus {
+        width: 755px;
+        font-size: 20px;
+    }
+    #telefono {
+        transition: all 2s;
+    }
+    #telefono:focus {
+        width: 755px;
+        font-size: 20px;
+    }
+}

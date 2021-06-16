@@ -1,0 +1,26 @@
+/** testimoniales**/
+
+.testimonial {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+    margin: .5rem;
+    p {
+        text-align: right;
+    }
+    blockquote::before {
+        content: '';
+        background-image: url(../imgs/comilla.svg);
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: -2rem;
+    }
+    blockquote {
+        position: relative;
+        padding-left: 5rem;
+        font-weight: 300;
+    }
+}

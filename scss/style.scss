@@ -1,0 +1,86 @@
+/* import */
+
+@import 'botones';
+@import 'header';
+@import 'nav';
+@import 'anuncios';
+@import 'contacto';
+@import 'sec-inferior';
+@import 'testimonial';
+@import 'footer';
+@import 'nosotros';
+@import 'formulario';
+
+/*html*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/**Global**/
+
+img {
+    max-width: 100%;
+    /**responsive**/
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    /**1200px**/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/** utilidades **/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}

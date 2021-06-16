@@ -1,0 +1,42 @@
+/** navegacion **/
+
+.navegacion {
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        @media (min-width: 768px) {
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: 1.8rem;
+        }
+        &:last-of-type {
+            margin: 0;
+        }
+        &:hover {
+            color: #71b100;
+        }
+    }
+}
+
+
+/** Mobile menu**/
+
+.mobile-menu img {
+    width: 5rem;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.navegacion:target {
+    display: block;
+}
+
+.navegacion {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}

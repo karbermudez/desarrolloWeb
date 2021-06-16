@@ -1,0 +1,125 @@
+/** anuncios **/
+
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    /** flex grow para que el contenido se haga mas grande de ser posible
+    flex shrink para que se haga mas chico de ser posible
+    **/
+    flex-shrink: 0;
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+    @media (min-width: 768px) {
+        /**para que el contenido no se encoja**/
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 700;
+    /**default 400**/
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+    li {
+        /** flex: 1; **/
+        display: flex;
+        img {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/** anuncio **/
+
+.resumen-propiedad {
+    display: flex;
+    justify-content: center;
+    /** alineacion horizontal**/
+    align-items: center;
+    /** alineacion vertical**/
+}
+
+.precio-ppal {
+    color: #71b100;
+    font-weight: 700;
+    /**default 400**/
+    background-color: #333333;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+.anuncio img {
+    justify-content: center;
+}
+
+
+/** imagenes anuncio **/
+
+@media (min-width: 768px) {
+    .anuncio {
+        overflow: hidden;
+    }
+    .anuncio img:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 25rem;
+    margin-top: 5rem;
+}
+
+.boton-contacto {
+    margin-left: 30rem;
+}
+
+.titulo-casa {
+    margin-top: 5rem;
+}
