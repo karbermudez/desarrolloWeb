@@ -3,7 +3,7 @@
 .site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
-    .inicio {
+    &.inicio {
         background-image: url(../imgs/header.jpg);
         background-position: center center;
         background-size: cover;

@@ -36,7 +36,7 @@
   background-color: #333333;
   padding: 1rem 0 3rem 0;
 }
-.site-header .inicio {
+.site-header.inicio {
   background-image: url(../imgs/header.jpg);
   background-position: center center;
   background-size: cover;
@@ -139,6 +139,20 @@
   background-color: #f5f5f5;
   margin-bottom: 2rem;
 }
+.anuncio picture {
+  display: inline-block;
+  height: 290px;
+  overflow: hidden;
+}
+.anuncio picture img {
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+  justify-content: center;
+}
+.anuncio picture img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 @media (min-width: 768px) {
   .anuncio {
     /**para que el contenido no se encoja**/
@@ -211,21 +225,6 @@
   flex: 0 0 100%;
 }
 
-.anuncio img {
-  justify-content: center;
-}
-
-/** imagenes anuncio **/
-@media (min-width: 768px) {
-  .anuncio {
-    overflow: hidden;
-  }
-
-  .anuncio img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
 .carousel {
   display: flex;
   justify-content: center;
@@ -509,6 +508,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body {
