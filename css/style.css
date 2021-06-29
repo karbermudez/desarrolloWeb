@@ -229,8 +229,18 @@
   display: flex;
   justify-content: center;
   width: 70%;
-  margin-left: 25rem;
-  margin-top: 5rem;
+  margin: 5rem auto;
+}
+@media (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .imagen-mobile {
+    display: none;
+  }
 }
 
 .boton-contacto {
