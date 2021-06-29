@@ -29,12 +29,21 @@
 }
 
 @media (min-width: 768px) {
-    .entrada-blog #imagen-blog {
-        flex-basis: 40%;
+    .entrada-blog .imagen-blog {
         margin: .5rem;
     }
     .entrada-blog.texto-entrada {
         flex-basis: calc(60% -2 rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .image-wrapper {
+        text-align: center;
+    }
+    .imagen-entrada-blog {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
